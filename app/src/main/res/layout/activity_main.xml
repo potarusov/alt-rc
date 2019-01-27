@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.braingang.alt_rc.MainActivity">
+
+    <Button
+        android:id="@+id/buttonDiscoveryStart"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/discovery_start"/>
+
+    <Button
+        android:id="@+id/buttonDiscoveryCancel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/discovery_cancel"
+        app:layout_constraintTop_toBottomOf="@id/buttonDiscoveryStart"/>
+    
+    <TextView
+        android:id="@+id/tvBtName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/label_bt_name"
+        android:padding="3dp"
+        app:layout_constraintTop_toBottomOf="@id/buttonDiscoveryCancel"/>
+
+    <TextView
+        android:id="@+id/tvBtAddress"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/label_bt_address"
+        android:padding="3dp"
+        app:layout_constraintTop_toBottomOf="@id/tvBtName"/>
+
+    <TextView
+        android:id="@+id/tvBtState"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/label_bt_state_unknown"
+        android:padding="3dp"
+        app:layout_constraintTop_toBottomOf="@id/tvBtAddress"/>
+
+    <Button
+        android:id="@+id/buttonAccelerate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/accelerate"
+        app:layout_constraintTop_toBottomOf="@id/tvBtState" />
+
+    <Button
+        android:id="@+id/buttonDecelerate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/decelerate"
+        app:layout_constraintTop_toBottomOf="@id/buttonAccelerate" />
+
+    <Button
+        android:id="@+id/buttonChangeDirection"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/change_direction"
+        app:layout_constraintTop_toBottomOf="@id/buttonDecelerate" />
+
+    <Button
+        android:id="@+id/buttonStop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/stop"
+        app:layout_constraintTop_toBottomOf="@id/buttonChangeDirection" />
+
+    <Button
+        android:id="@+id/buttonShutDown"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/shut_down"
+        app:layout_constraintTop_toBottomOf="@id/buttonStop" />
+
+    <ListView
+        android:id="@+id/lvBtDevice"
+        android:background="#dddddd"
+        android:dividerHeight="5dp"
+        android:layout_height="300dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="6dp"
+        app:layout_constraintTop_toBottomOf="@id/buttonShutDown"/>
+</android.support.constraint.ConstraintLayout>
