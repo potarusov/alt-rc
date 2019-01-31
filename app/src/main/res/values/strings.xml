@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ALTRemoteControl</string>
+    <string name="app_name">ALT Remote Control</string>
 
     <string name="discovery_cancel">Cancel Discovery</string>
     <string name="discovery_start">Start Discovery</string>
